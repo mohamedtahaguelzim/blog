@@ -1,4 +1,4 @@
-baseURL = 'https://mohamedtahaguelzim.github.io/blog/'
+baseURL = 'https://guelzim.dev/'
 languageCode = 'en-us'
 title = 'guelzim'
 theme = 'paper'
