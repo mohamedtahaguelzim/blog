@@ -1,0 +1,7 @@
+#!/bin/bash
+# Prevent accidental commit of draft posts
+if git diff --cached --name-only | grep -q '^content/drafts/'; then
+  echo "ERROR: Refusing to commit files from content/drafts/"
+  echo "Move the post to content/posts/ and set draft: false when ready to publish."
+  exit 1
+fi
